@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#C026D3" />
+    </linearGradient>
+
+    <!-- Accent Gradient for Active Elements -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25" />
+    </filter>
+    
+    <filter id="iconGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- iOS Squircle Base -->
+  <rect x="32" y="32" width="448" height="448" rx="100" fill="url(#bgGrad)" filter="url(#shadow)" />
+
+  <!-- Main Container Overlay / Gloss Base -->
+  <g filter="url(#iconGlow)">
+    
+    <!-- Script Document Base -->
+    <path d="M 140 120 
+             C 140 108.95, 148.95 100, 160 100 
+             L 310 100 
+             L 370 160 
+             L 370 390 
+             C 370 401.05, 361.05 410, 350 410 
+             L 160 410 
+             C 148.95 410, 140 401.05, 140 390 
+             Z" 
+          fill="#FFFFFF" 
+          fill-opacity="0.12" 
+          stroke="#FFFFFF" 
+          stroke-width="4" 
+          stroke-opacity="0.3" />
+
+    <!-- Document Fold -->
+    <path d="M 310 100 L 310 160 L 370 160 Z" 
+          fill="#FFFFFF" 
+          fill-opacity="0.25" />
+
+    <!-- Video Play Symbol + Speaker Detection Badge (Left side anchor) -->
+    <circle cx="195" cy="180" r="28" fill="url(#accentGrad)" />
+    <!-- Play Triangle -->
+    <polygon points="190,168 206,180 190,192" fill="#FFFFFF" />
+
+    <!-- Speaker / Soundwave Lines (Indicating Multi-speaker Detection) -->
+    <!-- Speaker 1 Waves -->
+    <path d="M 240 170 Q 248 180 240 190" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M 252 162 Q 264 180 252 198" stroke="#38BDF8" stroke-width="4" stroke-opacity="0.7" stroke-linecap="round" fill="none" />
+
+    <!-- Transcribed Text Lines (Script) -->
+    <!-- Speaker 1 Text Block -->
+    <rect x="180" y="230" width="150" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.9" />
+    <rect x="180" y="252" width="110" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.6" />
+
+    <!-- Speaker 2 Identifier Avatar/Dot -->
+    <circle cx="190" cy="295" r="10" fill="#F43F5E" />
+    <!-- Speaker 2 Soundwave -->
+    <path d="M 208 290 Q 213 295 208 300" stroke="#F43F5E" stroke-width="3" stroke-linecap="round" fill="none" />
+
+    <!-- Speaker 2 Text Block -->
+    <rect x="220" y="290" width="110" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.9" />
+    <rect x="180" y="312" width="150" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.6" />
+    <rect x="180" y="332" width="80" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.4" />
+
+  </g>
+</svg>

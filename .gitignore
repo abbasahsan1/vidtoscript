@@ -1,0 +1,57 @@
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode Build & Derived Data Directories
+build/
+build_device/
+DerivedData/
+*.build
+*.noindex
+
+# Xcode User-Specific Data
+xcuserdata/
+*.xcuserdatad
+*.xcuserstate
+*.xcbkptlist
+*.xccheckout
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Compiled Artifacts & Debug Symbols
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.app
+*.appex
+*.o
+*.d
+*.dia
+*.pcm
+*.hmap
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.resolved
+
+# Local Scratch & Output Files
+tree.txt
+context.txt
+
+# Machine Learning Models & Large Weights
+# Uncomment the lines below if you fetch models dynamically or do not want large binaries in Git
+# *.bin
+# *.gguf
+# *.mlmodelc/
+# Vendor/whisper.xcframework/

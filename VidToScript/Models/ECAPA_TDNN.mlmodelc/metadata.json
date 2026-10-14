@@ -1,0 +1,90 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float16",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 192)",
+        "shortDescription" : "",
+        "shape" : "[1, 192]",
+        "name" : "embedding",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 8,
+    "mlProgramOperationTypeHistogram" : {
+      "Range1d" : 1,
+      "Ios17.equal" : 2,
+      "Ios16.reduceMean" : 3,
+      "Ios16.softmax" : 1,
+      "Split" : 3,
+      "Select" : 2,
+      "Ios17.expandDims" : 7,
+      "Ios17.add" : 21,
+      "Tile" : 3,
+      "Ios16.sigmoid" : 3,
+      "Ios16.reduceSum" : 5,
+      "Ios17.squeeze" : 1,
+      "Shape" : 2,
+      "Ios17.gather" : 1,
+      "Pad" : 22,
+      "Ios17.batchNorm" : 31,
+      "Ios17.less" : 1,
+      "Ios17.conv" : 38,
+      "Ios16.relu" : 33,
+      "Ios17.cast" : 5,
+      "Ios17.realDiv" : 2,
+      "Ios17.concat" : 8,
+      "Ios17.sub" : 2,
+      "Ios17.pow" : 2,
+      "Ios17.clip" : 2,
+      "Ios17.sqrt" : 2,
+      "Ios17.tanh" : 1,
+      "Ios17.mul" : 8
+    },
+    "computePrecision" : "Mixed (Float16, Int16, Int32, UInt16)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "14.0",
+      "tvOS" : "17.0",
+      "visionOS" : "1.0",
+      "watchOS" : "10.0",
+      "iOS" : "17.0",
+      "macCatalyst" : "17.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.conversion_date" : "2026-03-25",
+      "com.github.apple.coremltools.source" : "torch==2.8.0",
+      "com.github.apple.coremltools.version" : "9.0",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1 × 80 × 10...5001",
+        "shapeRange" : "[[1, 1], [80, 80], [10, 5001]]",
+        "formattedType" : "MultiArray (Float16 1 × 80 × 301)",
+        "type" : "MultiArray",
+        "shape" : "[1, 80, 301]",
+        "name" : "mel_features",
+        "shortDescription" : ""
+      }
+    ],
+    "generatedClassName" : "ECAPA_TDNN_low_min",
+    "method" : "predict"
+  }
+]
